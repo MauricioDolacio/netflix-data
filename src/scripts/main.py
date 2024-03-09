@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import glob
 
-folder_path = 'src\\data\\raw'
+folder_path = 'src/data/raw'
 
 excel_files = glob.glob( os.path.join(folder_path, '*.xlsx'))
 
@@ -44,5 +44,6 @@ if dfs:
     
     #salva o arquivo de excel
     writer._save()
+    print(f"Cleaned data saved on {output_file}")
 else:
     print("No data to be saved")
