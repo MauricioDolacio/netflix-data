@@ -42,7 +42,6 @@ if dfs:
 
     result.to_excel(writer, index=False)
     
-    #salva o arquivo de excel
     writer._save()
     print(f"Cleaned data saved on {output_file}")
 else:
